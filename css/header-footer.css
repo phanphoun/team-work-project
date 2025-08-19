@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    /* font-family: "Archivo Black", sans-serif; */
+    
 }
 body{
     width: 100%;
@@ -17,6 +18,7 @@ header{
     height: 150px;
     display: flex;
     flex-direction: column;
+    box-shadow: 2, 2, 10px rgba(0, 0, 0, 0.1);
 }
 .header-top{
     width: 85%;
@@ -29,7 +31,7 @@ header{
     margin-left: 8%;
     /* margin:20px 50px;
     transform: translate(-50%, -50%); */
-    background-color: rgb(135, 177, 38);
+    background-color: #76a82f;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 50px;
@@ -38,6 +40,14 @@ header{
 .header-top-phar{
     font-family:Arial, Helvetica, sans-serif;
     color:#fff;
+    font-size: 0.8rem;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+.header-top-phar:hover{
+    color:orange;
+    text-decoration: underline;
+    cursor: pointer;
 }
 #orange{
     color:orange;
@@ -56,6 +66,12 @@ header{
 .header-top-right-phar{
     font-family:Arial, Helvetica, sans-serif;
     color:#fff;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+    font-size: 0.8rem;
+}
+.header-top-right-phar:hover{
+    color:orange;
     text-decoration: none;
 }
 
@@ -79,7 +95,9 @@ header{
     font-size: 3rem;
     font-weight: 800;
     color:rgb(135, 177, 38);
-    font-family:'Times New Roman', Times, serif;
+     font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     
 }
 
@@ -103,17 +121,25 @@ header{
 
 .navbar > li {
   position: relative;
+  width: 100px;
   /* display: flex;
   justify-content: center;
   align-items: flex-end; */
+  gap:10px;
+  align-items: center;
+  text-align: center;
 
 }
 
 .navbar > li > a {
   display: block;
-  padding: 14px 20px;
+  /* padding: 24px 40px; */
   color: #000;
   text-decoration: none;
+  align-items: center;
+  font-size: 1rem;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar > li > a:hover {
@@ -125,6 +151,7 @@ header{
   display: none;
   position: absolute;
   top: 100%;
+  padding:10px 10px;
   left: 0;
   list-style: none;
   background-color: #f9f9f9;
@@ -134,12 +161,14 @@ header{
   z-index: 1000;
 }
 
-.dropdown-menu li a {
+.dropdown-menu li .drop {
   display: block;
   padding: 12px 16px;
   color:#444;
+  text-align: start;
   text-decoration: none;
 }
+
 
 .dropdown-menu li a:hover {
   background-color: orange;
@@ -150,15 +179,17 @@ header{
 .dropdown:hover .dropdown-menu {
   display: block;
   border-radius: 8px;
+  transition: 0.3s ease-in;
+  /* margin-top: 16px; */
+  padding:10px 10px;
 }
-
 
 .header-bottom-right{
     display: flex;
     flex:1;
     justify-content: end;
     align-items: center;
-    gap:30px;
+    gap:20px;
 }
 .ri-search-line{
     padding:12px;
@@ -185,3 +216,5 @@ header{
 .ri-user-fill:hover{
      color:rgba(43, 59, 4, 0.959);
 }
+
+/* ----------header end----------- */
