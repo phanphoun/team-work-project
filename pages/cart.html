@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit-icon</title>
     <link rel="icon" href="/fruits image/vegetable-item-2.jpg">
+    <link rel="stylesheet" href="/css/cart.css">
     <link rel="stylesheet" href="/css/header-footer.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -63,26 +66,100 @@
 
         <!-- --------main content------ -->
         <main>
-            <div class="sub-main">
-                <div class="box1">
-                    <div class="box1-left">
-                        <h3>100% Organic Foods</h3>
-                        <h1>Organic Veggies & Fruits Foods</h1>
-                        <div class="search-container">
-                            <input type="text" placeholder="Search" />
-                            <button>Submit Now</button>
-                        </div>
+            <div class="banner-cart">
+                <div class="blur">
+                    <h1 class="cart-banner">Cart</h1>
+                    <div class="cart-link">
+                        <a href="" class="cart-link-phar">Home </a>/
+                        <a href="" class="cart-link-phar">Page </a>/
+                        <span class="cart-link-sm-phar">Cart</span>
                     </div>
-                    <img class="box1-img" src="./fruits image/hero-img-1.png" alt="">
+                </div>
+
+            </div>
+            <section class="content1-cart">
+                <div class="table-cart-header">
+                    <h3 class="phar1">Products</h3>
+                    <h3 class="phar2">Name</h3>
+                    <h3 class="phar3">Price</h3>
+                    <h3 class="phar4">Quantity</h3>
+                    <h3 class="phar5">Total</h3>
+                    <h3 class="phar6">Handle</h3>
+                </div>
+                <hr>
+                <div class="table-cart">
+                    <div class="items1">
+                        <img src="/fruits image/vegetable-item-3.png" alt="banana" class="item1">
+                    </div>
+                    <div class="items2">
+                        Big Banana
+                    </div>
+                    <div class="items3">
+                        2.99$
+                    </div>
+                    <div class="items4">
+                        <i class="ri-subtract-line"></i>
+                        3
+                        <i class="ri-add-fill"></i>
+                    </div>
+                    <div class="items5">
+                        2.99$
+                    </div>
+                    <div class="items6">
+                        <i class="ri-close-large-line"></i>
+                    </div>
                     
                 </div>
-                <div class="box2">
-                    <i class='fas fa-car-side' style='font-size:36px'></i>
-                    <i class='fas fa-user-shield' style='font-size:36px'></i>
-                    <i class='fas fa-exchange-alt' style='font-size:36px'></i>
-                    <i class='fas fa-phone-volume'></i>
+                <hr>
+                <div class="table-cart">
+                    <div class="items1">
+                        <img src="/fruits image/vegetable-item-2.jpg" alt="Potatos" class="item1">
+                    </div>
+                    <div class="items2">
+                        Potatos
+                    </div>
+                    <div class="items3">
+                        2.99$
+                    </div>
+                    <div class="items4">
+                        <i class="ri-subtract-line"></i>
+                        1
+                        <i class="ri-add-fill"></i>
+                    </div>
+                    <div class="items5">
+                        2.99$
+                    </div>
+                    <div class="items6">
+                        <i class="ri-close-large-line"></i>
+                    </div>
+                    
                 </div>
-            </div>
+                <hr>
+                <div class="table-cart">
+                    <div class="items1">
+                        <img src="/fruits image/vegetable-item-1.jpg" alt="cabage" class="item1">
+                    </div>
+                    <div class="items2">
+                        Awesome Brocoli
+                    </div>
+                    <div class="items3">
+                        2.99$
+                    </div>
+                    <div class="items4">
+                        <i class="ri-subtract-line"></i>
+                        6
+                        <i class="ri-add-fill"></i>
+                    </div>
+                    <div class="items5">
+                        2.99$
+                    </div>
+                    <div class="items6">
+                        <i class="ri-close-large-line"></i>
+                    </div>
+                    
+                </div>
+                <hr>
+            </section>
         </main>
         <!-- ----------footer---------- -->
         <footer>
@@ -154,7 +231,7 @@
                                 <span class="footer-link-phar-hover">Email: phanphoun@gmail.com</span>
                                 <span class="footer-link-phar-hover">Phone: +855: 0712132534</span>
                                 <span class="footer-link-phar-hover">Payment Accepted</span>
-                                <img src="./fruits image/payment.png" alt="Payment" class="img-payment">
+                                <img src="/fruits image/payment.png" alt="Payment" class="img-payment">
                             </div>
                         </div>
                     </div>
@@ -162,11 +239,12 @@
                 <div class="footer-bottom">
                     <span class="footer-bottom-phar">© 2023 All rights reserved | This template is made with
                         <i class="ri-heart-fill" id="orange"></i>
-                         <a href="" class="lang">HTML  /</a>
-                         <a href="" class="lang">CSS  /</a>
-                         <a href="" class="lang">Javascript</a>
+                        <a href="" class="lang">HTML /</a>
+                        <a href="" class="lang">CSS /</a>
+                        <a href="" class="lang">Javascript</a>
                     </span>
-                    <span class="footer-bottom-phar">Designed by <a href="about.html"class="footer-link-phar-hover">Phoun Phan</a></span>
+                    <span class="footer-bottom-phar">Designed by <a href="about.html"
+                            class="footer-link-phar-hover">Phoun Phan</a></span>
                 </div>
             </div>
         </footer>
